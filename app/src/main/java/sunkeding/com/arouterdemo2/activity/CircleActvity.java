@@ -3,6 +3,8 @@ package sunkeding.com.arouterdemo2.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
@@ -20,5 +22,15 @@ public class CircleActvity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circle);
+        TextView tv_circle = findViewById(R.id.tv_circle);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String tabindex = extras.getString("tabindex");
+            String actionId = extras.getString("actionId");
+            String s = "tabindex=" + tabindex + "\n" + "actionId=" + actionId;
+            Log.d("CircleActvity", s);
+            tv_circle.setText(s);
+
+        }
     }
 }

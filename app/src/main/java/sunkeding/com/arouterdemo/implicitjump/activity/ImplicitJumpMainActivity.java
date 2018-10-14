@@ -2,13 +2,13 @@ package sunkeding.com.arouterdemo.implicitjump.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
 import sunkeding.com.arouterdemo.R;
 import sunkeding.com.arouterdemo.activity.WebviewActivity;
+import sunkeding.com.arouterdemo.implicitjump.util.RouterJumpUtil;
 
 /**
  * @author: skd
@@ -23,18 +23,18 @@ public class ImplicitJumpMainActivity extends Activity {
         findViewById(R.id.bt1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setData(Uri.parse("skdscheme://www.skd.com/filter/action?studentId=100&teacherId=200"));
-                startActivity(intent);
+                RouterJumpUtil.goRouter(ImplicitJumpMainActivity.this,"skdscheme://www.skd.com/filter/action?studentId=100&teacherId=200");
             }
         });
         findViewById(R.id.bt2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ImplicitJumpMainActivity.this, WebviewActivity.class);
-                intent.putExtra("url","file:///android_asset/schame-test.html");
+                intent.putExtra("url", "file:///android_asset/schame-test.html");
                 startActivity(intent);
             }
         });
     }
+
+
 }

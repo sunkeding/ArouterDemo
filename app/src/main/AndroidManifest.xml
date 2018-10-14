@@ -81,6 +81,7 @@
         </activity>
         <activity android:name=".arouter.activity.ArouterMainActivity" />
         <activity android:name=".implicitjump.activity.ImplicitJumpMainActivity" />
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>

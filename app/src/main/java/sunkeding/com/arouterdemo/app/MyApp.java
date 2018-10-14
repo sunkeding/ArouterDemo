@@ -9,7 +9,9 @@ import com.alibaba.android.arouter.launcher.ARouter;
  * @date 2018/10/14
  * @Desc MyApp
  */
-public class MyApp extends Application{
+public class MyApp extends Application {
+    public static boolean isLogon = false;
+
     @Override
     public void onCreate() {
         super.onCreate();

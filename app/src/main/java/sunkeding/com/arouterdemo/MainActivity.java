@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import sunkeding.com.arouterdemo.app.MyApp;
 import sunkeding.com.arouterdemo.arouter.activity.ArouterMainActivity;
 import sunkeding.com.arouterdemo.implicitjump.activity.ImplicitJumpMainActivity;
 
@@ -24,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, ImplicitJumpMainActivity.class));
+            }
+        });
+        findViewById(R.id.bt3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyApp.isLogon=true;
+            }
+        });
+        findViewById(R.id.bt4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyApp.isLogon = false;
             }
         });
 

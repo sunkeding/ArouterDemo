@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="sunkeding.com.arouterdemo">
 
     <application
@@ -18,40 +19,65 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="sunkeding.com.arouterdemo.activity.SchemeFilterActivity">
+        <!--<activity android:name="sunkeding.com.arouterdemo.arouter.activity.SchemeFilterActivity">-->
 
-            <!-- Schame -->
+            <!--&lt;!&ndash; Schame &ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<data-->
+                    <!--android:host="www.skd.com"-->
+                    <!--android:scheme="skdscheme" />-->
+
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+            <!--</intent-filter>-->
+
+            <!--&lt;!&ndash; App Links &ndash;&gt;-->
+            <!--<intent-filter android:autoVerify="true">-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+
+                <!--<data-->
+                    <!--android:host="www.skd.com"-->
+                    <!--android:scheme="http" />-->
+                <!--<data-->
+                    <!--android:host="www.skd.com"-->
+                    <!--android:scheme="https" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity android:name="sunkeding.com.arouterdemo.arouter.activity.CoachActvity">
+
+        </activity>
+        <activity android:name="sunkeding.com.arouterdemo.arouter.activity.CircleActvity" >
             <intent-filter>
-                <data
-                    android:host="m.aliyun.com"
-                    android:scheme="arouter"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <action android:name="android.intent.action.VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE"/>
-            </intent-filter>
-
-            <!-- App Links -->
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-
                 <data
-                    android:host="m.aliyun.com"
-                    android:scheme="http"/>
-                <data
-                    android:host="m.aliyun.com"
-                    android:scheme="https"/>
+                    android:host="www.skd.com"
+                    android:pathPrefix="/circle/circleHome"
+                    android:scheme="skdscheme" />
             </intent-filter>
         </activity>
-        <activity android:name="sunkeding.com.arouterdemo.activity.CoachActvity">
-
-        </activity>
-        <activity android:name="sunkeding.com.arouterdemo.activity.CircleActvity" />
         <activity android:name="sunkeding.com.arouterdemo.activity.WebviewActivity" />
+        <activity android:name=".implicitjump.activity.FilterActionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="www.skd.com"
+                    android:pathPrefix="/filter/action"
+                    android:scheme="skdscheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".arouter.activity.ArouterMainActivity" />
+        <activity android:name=".implicitjump.activity.ImplicitJumpMainActivity" />
     </application>
 
 </manifest>

@@ -1,9 +1,9 @@
-package sunkeding.com.arouterdemo.activity;
+package sunkeding.com.arouterdemo.arouter.activity;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -28,9 +28,18 @@ public class CircleActvity extends Activity {
             String tabindex = extras.getString("tabindex");
             String actionId = extras.getString("actionId");
             String s = "tabindex=" + tabindex + "\n" + "actionId=" + actionId;
-            Log.d("CircleActvity", s);
-            tv_circle.setText(s);
+            tv_circle.setText("Arouter---->" + s);
 
         }
+
+
+        Uri uri = getIntent().getData();
+        if (uri != null) {
+            String tabindex = uri.getQueryParameter("tabindex");
+            String actionId = uri.getQueryParameter("actionId");
+            String s = "tabindex=" + tabindex + "\n" + "actionId=" + actionId;
+            tv_circle.setText("隐式跳转---->" + s);
+        }
+
     }
 }

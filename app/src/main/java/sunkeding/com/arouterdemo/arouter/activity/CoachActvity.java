@@ -1,9 +1,9 @@
-package sunkeding.com.arouterdemo.activity;
+package sunkeding.com.arouterdemo.arouter.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
@@ -15,16 +15,19 @@ import sunkeding.com.arouterdemo.constant.RouterPathConsatnt;
  * @date 2018/10/14
  * @Desc CircleActvity
  */
-@Route( path = RouterPathConsatnt.COACH_HOME_ROUTER)
-public class CoachActvity extends Activity{
+@Route(path = RouterPathConsatnt.COACH_HOME_ROUTER)
+public class CoachActvity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coach);
         Bundle extras = getIntent().getExtras();
-        if (extras!=null){
+        TextView tv_coach = findViewById(R.id.tv_coach);
+        if (extras != null) {
             String value = extras.getString("value");
-            Log.d("CoachActvity", "路由跳转过来携带的参数value="+value);
+            tv_coach.setText("Arouter----->" + "路由跳转过来携带的参数value=" + value);
         }
+
+
     }
 }

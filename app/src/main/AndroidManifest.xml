@@ -57,9 +57,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="www.skd.com"
+                    android:host="@string/host"
                     android:pathPrefix="/circle/circleHome"
-                    android:scheme="skdscheme" />
+                    android:scheme="@string/scheme" />
             </intent-filter>
         </activity>
         <activity android:name="sunkeding.com.arouterdemo.activity.WebviewActivity" />
@@ -70,13 +70,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="www.skd.com"
-                    android:pathPrefix="/filter/action"
-                    android:scheme="skdscheme" />
+                    android:host="@string/host"
+                    android:pathPrefix="@string/filteraction"
+                    android:scheme="@string/scheme" />
                 <data
-                    android:host="www.skd.com"
-                    android:pathPrefix="/filterold/action"
-                    android:scheme="skdscheme" />
+                    android:host="@string/host"
+                    android:pathPrefix="@string/filteroldaction"
+                    android:scheme="@string/scheme" />
             </intent-filter>
         </activity>
         <activity android:name=".arouter.activity.ArouterMainActivity" />

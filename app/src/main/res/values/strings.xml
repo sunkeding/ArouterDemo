@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ArouterDemo</string>
-    <string name="skd">skd.com</string>
+    <string name="host">www.skd.com</string>
+    <string name="scheme">skdscheme</string>
+    <string name="filteraction">/filter/action</string>
+    <string name="filteroldaction">/filterold/action</string>
+
 </resources>

@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2.app;
+package sunkeding.com.arouterdemo.app;
 
 import android.app.Application;
 

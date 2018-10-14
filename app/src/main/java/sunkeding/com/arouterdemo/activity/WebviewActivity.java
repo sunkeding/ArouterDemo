@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2.activity;
+package sunkeding.com.arouterdemo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 
-import sunkeding.com.arouterdemo2.R;
+import sunkeding.com.arouterdemo.R;
 
 @Route(path = "/test/webview")
 public class WebviewActivity extends Activity {

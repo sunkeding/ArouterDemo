@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sunkeding.com.arouterdemo2">
+    package="sunkeding.com.arouterdemo">
 
     <application
-        android:name=".app.MyApp"
+        android:name="sunkeding.com.arouterdemo.app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="sunkeding.com.arouterdemo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.SchemeFilterActivity">
+        <activity android:name="sunkeding.com.arouterdemo.activity.SchemeFilterActivity">
 
             <!-- Schame -->
             <intent-filter>
@@ -47,11 +47,11 @@
                     android:scheme="https"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CoachActvity">
+        <activity android:name="sunkeding.com.arouterdemo.activity.CoachActvity">
 
         </activity>
-        <activity android:name=".activity.CircleActvity" />
-        <activity android:name=".activity.WebviewActivity" />
+        <activity android:name="sunkeding.com.arouterdemo.activity.CircleActvity" />
+        <activity android:name="sunkeding.com.arouterdemo.activity.WebviewActivity" />
     </application>
 
 </manifest>

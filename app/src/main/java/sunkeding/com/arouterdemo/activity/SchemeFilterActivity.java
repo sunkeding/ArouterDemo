@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2.activity;
+package sunkeding.com.arouterdemo.activity;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -24,12 +24,12 @@ public class SchemeFilterActivity extends Activity {
             return;
         }
         Log.d("SchemeFilterActivity", "外部uri:" + uri);
-        Log.d("SchemeFilterActivity", uri.getScheme());
-        Log.d("SchemeFilterActivity", uri.getHost());
-        Log.d("SchemeFilterActivity", uri.getPath());
-        Log.d("SchemeFilterActivity", uri.getQuery());
-        Log.d("SchemeFilterActivity", uri.getLastPathSegment());
-        Log.d("SchemeFilterActivity", uri.getQueryParameter("actionId"));
+//        Log.d("SchemeFilterActivity", uri.getScheme());
+//        Log.d("SchemeFilterActivity", uri.getHost());
+//        Log.d("SchemeFilterActivity", uri.getPath());
+//        Log.d("SchemeFilterActivity", uri.getQuery());
+//        Log.d("SchemeFilterActivity", uri.getLastPathSegment());
+//        Log.d("SchemeFilterActivity", uri.getQueryParameter("actionId"));
 
         Set<String> queryParameterNames = uri.getQueryParameterNames();
         Bundle bundle = new Bundle();

@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2.activity;
+package sunkeding.com.arouterdemo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.util.Log;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-import sunkeding.com.arouterdemo2.R;
-import sunkeding.com.arouterdemo2.constant.RouterPathConsatnt;
+import sunkeding.com.arouterdemo.R;
+import sunkeding.com.arouterdemo.constant.RouterPathConsatnt;
 
 /**
  * @author: skd

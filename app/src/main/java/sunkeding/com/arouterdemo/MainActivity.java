@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2;
+package sunkeding.com.arouterdemo;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
-import sunkeding.com.arouterdemo2.constant.RouterPathConsatnt;
+import sunkeding.com.arouterdemo.constant.RouterPathConsatnt;
 
 public class MainActivity extends AppCompatActivity {
 

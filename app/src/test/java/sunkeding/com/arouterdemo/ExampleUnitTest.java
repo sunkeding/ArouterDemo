@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2;
+package sunkeding.com.arouterdemo;
 
 import org.junit.Test;
 

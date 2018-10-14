@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2.constant;
+package sunkeding.com.arouterdemo.constant;
 
 /**
  * @author: skd

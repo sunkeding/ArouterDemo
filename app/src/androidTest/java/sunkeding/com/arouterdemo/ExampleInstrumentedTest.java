@@ -1,4 +1,4 @@
-package sunkeding.com.arouterdemo2;
+package sunkeding.com.arouterdemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

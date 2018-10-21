@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sunkeding.com.setting" >
+
+    <application>
+        <activity android:name=".SettingActivity" />
+    </application>
+</manifest>

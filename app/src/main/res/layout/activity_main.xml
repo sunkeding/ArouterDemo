@@ -39,4 +39,18 @@
         android:text="退出登录" />
 
 
+    <Button
+        android:id="@+id/bt5"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到设置页" />
+
+    <Button
+        android:id="@+id/bt6"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到登录页" />
+
 </LinearLayout>

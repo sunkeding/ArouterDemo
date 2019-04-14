@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import netease.ServiceFactory;
 import sunkeding.com.arouterdemo.app.MyApp;
 import sunkeding.com.arouterdemo.arouter.activity.ArouterMainActivity;
 import sunkeding.com.arouterdemo.implicitjump.activity.ImplicitJumpMainActivity;
@@ -51,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            }
+        });
+        findViewById(R.id.bt7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ServiceFactory.getInstance().getLoginModuleInterface().gotoLogin(MainActivity.this);
             }
         });
 

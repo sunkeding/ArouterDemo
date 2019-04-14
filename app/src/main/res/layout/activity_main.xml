@@ -53,4 +53,12 @@
         android:layout_height="wrap_content"
         android:text="跳转到登录页" />
 
+
+    <Button
+        android:id="@+id/bt7"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网易云课堂写法，跳转到登录页" />
+
 </LinearLayout>

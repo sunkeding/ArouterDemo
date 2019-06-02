@@ -1,10 +1,14 @@
 package sunkeding.com.arouterdemo;
 
+import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.alibaba.android.arouter.launcher.ARouter;
+
+import arouterprovider.LoginService;
 import netease.ServiceFactory;
 import sunkeding.com.arouterdemo.app.MyApp;
 import sunkeding.com.arouterdemo.arouter.activity.ArouterMainActivity;
@@ -61,7 +65,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ARouter.getInstance().navigation(LoginService.class).goToLogin2(this);
+
     }
+    ActivityManager
 
 
 }

@@ -6,6 +6,7 @@ package sunkeding.com.aninterface;
  * @Desc InterfaceServiceManager
  */
 public class InterfaceServiceManager {
+    // TODO: 2019-06-02  做成单例会好些
     public static LoginModuleInterface getLoginInterface() {
         Class<?> clazz = null;
         try {

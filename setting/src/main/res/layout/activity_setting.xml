@@ -14,4 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="反射的方法跳转到登录页" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arouter的IProvider策略实现跨模块调用方法" />
 </LinearLayout>

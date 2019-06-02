@@ -6,6 +6,12 @@ android {
 
 
     defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
